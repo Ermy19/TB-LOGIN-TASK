@@ -10,7 +10,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-// Mock data
 const mockTransactions = [
   { id: 1, date: "2024-01-15", type: "Deposit", amount: "$1,200.00", status: "completed" },
   { id: 2, date: "2024-01-14", type: "Withdrawal", amount: "$350.00", status: "pending" },
@@ -24,7 +23,7 @@ function Dashboard() {
   return (
     <div className="min-h-screen bg-background p-8">
       <div className="max-w-7xl mx-auto space-y-8">
-        {/* Header */}
+
         <div className="flex justify-between items-center">
           <div>
             <h1 className="text-4xl font-bold text-foreground">Dashboard</h1>
@@ -35,7 +34,6 @@ function Dashboard() {
           </Button>
         </div>
 
-        {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card className="p-6">
             <h3 className="text-sm font-medium text-muted-foreground">Total Balance</h3>
@@ -54,7 +52,6 @@ function Dashboard() {
           </Card>
         </div>
 
-        {/* Recent Transactions */}
         <Card className="p-6">
           <h2 className="text-xl font-semibold mb-4">Recent Transactions</h2>
           <Table>
